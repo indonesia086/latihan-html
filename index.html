@@ -1,22 +1,27 @@
-<button onclick="toggleMode()" 
-style="
-margin-top:20px;
-padding: 10px 20px;
-border-radius: 8px;
-border: none;
-cursor: pointer;
-">
-🌙 Toggle Dark Mode
-</button>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ahmad Dafa</title>
+</head>
+
+<body style="text-align:center; font-family:Arial; padding-top:50px;">
+
+<h1>Ahmad Dafa</h1>
+<p>Mahasiswa Sistem Informasi</p>
+
+<button onclick="toggleMode()">🌙 Toggle Dark Mode</button>
 
 <script>
 function toggleMode() {
-    if (document.body.style.background.includes("linear-gradient")) {
-        document.body.style.background = "#1e1e1e";
-        document.body.style.color = "white";
+    if (document.body.style.background === "black") {
+        document.body.style.background = "white";
+        document.body.style.color = "black";
     } else {
-        document.body.style.background = "linear-gradient(to right, #74ebd5, #9face6)";
+        document.body.style.background = "black";
         document.body.style.color = "white";
     }
 }
 </script>
+
+</body>
+</html>
